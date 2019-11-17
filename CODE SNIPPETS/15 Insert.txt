@@ -1,0 +1,13 @@
+protected async Task Insert() {
+
+  Student s = new Student() {
+    StudentId = Guid.NewGuid().ToString(),
+    FirstName = firstName,
+    LastName = lastName,
+    School = school
+  };
+
+  await studentService.InsertStudentAsync(s);
+  ClearFields();
+  await load();
+}

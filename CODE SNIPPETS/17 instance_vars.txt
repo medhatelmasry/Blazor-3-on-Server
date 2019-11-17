@@ -1,0 +1,3 @@
+private enum MODE { None, Add, EditDelete };
+MODE mode = MODE.None;
+Student student;

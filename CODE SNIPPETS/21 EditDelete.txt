@@ -1,0 +1,10 @@
+@if (students != null && mode==MODE.EditDelete) // Update & Delete form
+{
+  <input type="hidden" @bind="@studentId" /><br />
+  <input placeholder="First Name" @bind="@firstName" /><br />
+  <input placeholder="Last Name" @bind="@lastName" /><br />
+  <input placeholder="School" @bind="@school" /><br />
+  <button @onclick="@Update" class="btn btn-primary">Update</button>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <button @onclick="@Delete" class="btn btn-danger">Delete</button>
+}

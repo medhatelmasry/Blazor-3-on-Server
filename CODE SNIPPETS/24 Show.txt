@@ -1,0 +1,8 @@
+protected async Task Show(string id) {
+  student = await studentService.GetStudentByIdAsync(id);
+  studentId = student.StudentId;
+  firstName = student.FirstName;
+  lastName = student.LastName;
+  school = student.School;
+  mode = MODE.EditDelete;
+}

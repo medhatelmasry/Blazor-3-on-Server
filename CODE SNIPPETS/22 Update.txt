@@ -1,0 +1,21 @@
+protected async Task Update() {
+
+  Student s = new Student() {
+    StudentId = studentId,
+    FirstName = firstName,
+    LastName = lastName,
+    School = school
+  };
+
+  await studentService.UpdateStudentAsync(studentId, s);
+  ClearFields();
+  await load();
+  mode = MODE.None;
+}
+
+protected async Task Delete() {
+  await studentService.DeleteStudentAsync(studentId);
+  ClearFields();
+  await load();
+  mode = MODE.None;
+}

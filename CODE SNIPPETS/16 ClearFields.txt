@@ -1,0 +1,6 @@
+protected void ClearFields() {
+  studentId = string.Empty;
+  firstName = string.Empty;
+  lastName = string.Empty;
+  school = string.Empty;
+}

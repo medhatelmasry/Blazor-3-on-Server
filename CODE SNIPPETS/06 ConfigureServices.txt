@@ -1,0 +1,2 @@
+services.AddDbContext<SchoolDbContext>(
+  option => option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
